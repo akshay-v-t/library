@@ -1,0 +1,240 @@
+:root{
+
+    --darkBlue : #141B41;
+    --secondaryBlue : #306BAC;
+
+}
+
+html,body {
+    box-sizing: border-box;
+   
+    font-family: poppins;
+    display: flex;
+    column-gap: 20px;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    background-color: var(--darkBlue);
+    display: flex;
+    border-radius: 4px;
+   
+    padding: 5px 20px;
+    color: #fff;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    border-radius: 8px;
+   
+    padding: 20px;
+    
+    flex-direction: column;
+}
+
+footer{
+
+    background-color: var(--darkBlue);
+    display: flex;
+    border-radius: 8px;
+    color: #fff;
+ 
+    padding: 20px;
+    margin-top: auto;
+    
+
+}
+
+.input-section input ,select  {
+    padding: 8px;
+    font-size: 14px;
+    font-family: Poppins;
+    border: 2px solid var(--secondaryBlue);
+   
+    border-radius: 4px;
+    margin: 4px;
+
+}
+.input-section input,button {
+    padding: 8px;
+    font-size: 14px;
+    font-family: Poppins;
+    border: 2px solid var(--secondaryBlue);
+   
+    border-radius: 4px;
+    margin: 4px;
+
+
+}
+
+button{
+    background-color: var(--secondaryBlue);
+    color: #fff;
+    cursor: pointer;
+   padding: 8px 48px;
+   transition: 0.2s ease-in-out;
+   border: none;
+}
+
+button:hover{
+    background-color: #ffff;
+    color: var(--darkBlue);
+   
+}
+
+button:active{
+    background-color: var(--secondaryBlue);
+}
+
+input[type="checkbox"] {
+    accent-color: var(--secondaryBlue);
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+   
+   
+}
+
+.book-container {
+
+    background-color: rgb(196, 234, 221);
+   
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+    padding: 20px;
+
+}
+
+#input-form {
+    display: flex;
+    flex-direction: column;
+   
+   
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#input-form label{
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+#input-form button{
+    margin-top: 20px;
+}
+
+#input-form h1{
+    font-size: 20px;
+    align-self: center;
+    font-weight: 600;
+}
+
+h1{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.modal-container {
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0,0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.modal-container.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+.modal{
+    background-color: #fff;
+    padding: 10px 10px;
+    border-radius: 5px;
+    width: 600px;
+    max-width: 100%;
+    box-shadow: #000000;
+
+}
+
+#close-btn {
+    font-size: 34px;
+    position: relative;
+    background-color: #fff;
+    border: none;
+    color: #000000;
+    padding:2px 10px;
+    display: flex;
+    
+    justify-self: end;
+    margin-bottom: -60px;
+   
+
+}
+
+.bookshelf{
+    display: grid;
+  gap: 10px;
+  padding: 10px;
+
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.book-card{
+
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: -6px 0px 0px 0px  #6d0505;
+    background-color: #dbdbdb;
+    background-image: url(/assets/book-bg.jpg) ;
+    background-position:left;
+    background-size: cover;
+    background-blend-mode:screen;
+    display: flex;
+    flex-direction: column;
+}
+
+.remove-btn{
+    padding: 6px 14px;
+    background-color: red;
+    border: none;
+    color: #fff;
+    font-size: 12px;
+}
+
+.remove-btn:hover{
+   
+    color: #fff;
+    background-color: #6d0505;
+    
+}
+
+.key{
+    font-weight:  600;;
+}
+
+table, th, td {
+    width: 400px;
+}

@@ -7,7 +7,67 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <h1>MyBookSpace </h1>
+        <div class="button-section">
+            <button id="open-modal">Add new book</button>
+        <button>Clear Library</button>
+
+        </div>
+            
+    </header>
+    <main>
+        
+        
+
+<div class="modal-container" id="modal_container">
+    <div class="modal">
+        <button id="close-btn">x</button>
+
+        <div class="input-section">
+           
+            <form id="input-form">
+             <h1>Add book to  library</h1>
+                <label for="title">Title</label>
+                <input type="text" id="title" placeholder="Enter book title" required>
+                <label for="author">Author</label>
+                <input type="text" id="author" placeholder="Enter author name" required>
+                <label for="pages">Pages</label>
+                <input type="number" id="pages" placeholder="Enter number of pages" required>
+                <label for="read">Read</label>
+               <select  name="read" id="read" >
+                 <option value="" disabled="true" selected>Select an option</option>
+                 <option value="Started">Started</option>
+                 <option value="In Progress">In Progress</option>
+                 <option value="Completed">Completed<option>
+               </select>
+ 
+                <button type="submit" id="submit-btn">Add new book</button>
+            </form>
+         </div>
+         
+
+    </div>
+</div>
+
+     
+
+        <div class="text-area">
+          
+            
+        </div>
+
+        <div class="bookshelf">
+            <p> Bookshelf is empty. Click on "Add new book" to add book.</p>
+           
+        </div>
+
+        
+    </main>
+    <footer>
+        <p>credits</p>
+
+    </footer>
 
 
 
